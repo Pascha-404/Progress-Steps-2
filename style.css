@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
-box-sizing: border-box;
-/* border: 1px solid black; */
+    box-sizing: border-box;
+    /* border: 1px solid black; */
 
 }
 
@@ -24,8 +24,8 @@ body {
 .container {
     text-align: center;
 }
-    
-.progress-container::before{
+
+.progress-container::before {
     content: '';
     position: absolute;
     height: 4px;
@@ -33,11 +33,11 @@ body {
     width: 100%;
     z-index: -1;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     left: 0;
-    }
+}
 
-.progress-container{
+.progress-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -46,19 +46,19 @@ body {
     width: 30vw;
 }
 
-.progress{
-position: absolute;
-height: 4px;
-background-color: var(--fill-background-full);
-width: 0%;
-z-index: -1;
-top: 50%;
-transform:translateY(-50%);
-left: 0;
-transition: width .5s ease;
+.progress {
+    position: absolute;
+    height: 4px;
+    background-color: var(--fill-background-full);
+    width: 0%;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: width 0.8s ease-out;
 }
 
-.circle{
+.circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,8 +68,9 @@ transition: width .5s ease;
     border-radius: 50%;
 }
 
-.circle.active{
-    border: 3px solid var(--fill-background-full)
+.circle.active {
+    border: 3px solid var(--fill-background-full);
+    transition: border 0.3s ease-in;
 }
 
 .btn {
@@ -77,16 +78,18 @@ transition: width .5s ease;
     padding: 8px 30px;
     margin: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
-.btn:disabled{
+.btn:disabled {
     background-color: var(--fill-background-empty);
+    cursor: not-allowed;
 }
 
-.btn:active{
+.btn:active {
     transform: scale(0.98);
 }
 
-.btn:focus{
+.btn:focus {
     outline: none;
 }
