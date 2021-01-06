@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+box-sizing: border-box;
+/* border: 1px solid black; */
+
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden
+}
+
+.container {
+    text-align: center;
+}
+    
+
+.progress-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 20vw;
+}
+
+.progress{
+position: absolute;
+height: 4px;
+}
