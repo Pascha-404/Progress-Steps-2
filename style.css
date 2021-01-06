@@ -40,10 +40,10 @@ body {
 .progress-container {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 30vw;
+    max-width: 100%;
 }
 
 .progress {
@@ -55,7 +55,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    transition: width 0.8s ease-out;
+    transition: width 0.8s ease;
 }
 
 .circle {
@@ -66,6 +66,7 @@ body {
     height: 30px;
     background-color: var(--fill-background-empty);
     border-radius: 50%;
+    transition: .8s ease;
 }
 
 .circle.active {
@@ -76,9 +77,11 @@ body {
 .btn {
     background-color: var(--fill-background-full);
     padding: 8px 30px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 6px;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
 }
 
 .btn:disabled {
